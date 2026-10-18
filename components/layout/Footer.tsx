@@ -13,7 +13,7 @@ export function Footer() {
                 DM
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-grotesk font-semibold text-sm">Dean Maguate</span>
+                <span className="font-grotesk font-semibold text-sm">Dean Brylle Maguate</span>
                 <span className="font-mono text-[0.65rem] text-muted">Web Developer</span>
               </div>
             </div>

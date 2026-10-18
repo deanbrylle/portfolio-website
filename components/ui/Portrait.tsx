@@ -15,7 +15,7 @@ export function Portrait({ className }: { className?: string }) {
       />
       <div className="relative rounded-2xl border border-border bg-card overflow-hidden shadow-2xl">
         <Image
-          src="/images/portrait.png"
+          src="/images/portrait.jpg"
           alt="Portrait of Dean Brylle Maguate"
           fill
           sizes="(max-width: 768px) 100vw, 560px"
@@ -30,7 +30,7 @@ export function Portrait({ className }: { className?: string }) {
           <div className="rounded-full bg-lime/10 p-3 mb-3">
             <span className="text-lime font-grotesk font-bold text-2xl">DM</span>
           </div>
-          <p className="text-muted text-xs font-mono">Portrait placeholder — add public/images/portrait.png</p>
+          <p className="text-muted text-xs font-mono">Portrait placeholder — add public/images/portrait.jpg</p>
         </div>
       )}
     </div>

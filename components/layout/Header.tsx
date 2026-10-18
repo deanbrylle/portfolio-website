@@ -79,7 +79,7 @@ export function Header() {
                 DM
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-grotesk font-semibold text-[0.9rem]">Dean Maguate</span>
+                <span className="font-grotesk font-semibold text-[0.9rem]">Dean Brylle Maguate</span>
                 <span className="font-mono text-[0.65rem] text-muted">Web Developer</span>
               </div>
             </button>
