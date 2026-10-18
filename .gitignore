@@ -1,2 +1,17 @@
+# Vercel
 .vercel
 .env*
+
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# TypeScript incremental build info
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Misc
+.DS_Store

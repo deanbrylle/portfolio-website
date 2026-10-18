@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-obsidian: #080B0A;
+    --color-graphite: #101713;
+    --color-card: #151C22;
+    --color-elevated: #1A2428;
+    --color-lime: #C6FF4D;
+    --color-cyan: #71D9F8;
+    --color-primary-text: #EAF0F4;
+    --color-secondary-text: #A7B2B4;
+    --color-muted: #748286;
+    --color-border: rgba(234, 240, 244, 0.12);
+    --color-success: #34D399;
+    --color-error: #F87171;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-2xl: 28px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-obsidian);
+    color: var(--color-primary-text);
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-primary-text);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .skip-link:focus-visible {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 10000;
+    width: auto;
+    height: auto;
+    padding: 8px 14px;
+    clip: auto;
+    background: #C6FF4D;
+    color: #080B0A;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: #C6FF4D;
+    color: #080B0A;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
